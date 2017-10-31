@@ -10,7 +10,9 @@
     <%= link_to "Create a Task", new_task_path(task) %>
     <%= link_to "Edit a Task", edit_task_path(task) %>
     <%= link_to "Delete a Task", task_path(task), method: :delete %>
-
+    <p>
+    <%= task.created_at %>
+    </p>
   </li>
   <% end %>
 </ul>
